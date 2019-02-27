@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Data Lovers</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <section id="pgInicial">
+    <main>
+      <header>
+        <h1>Latino América Desenvolvida</h1>
+        <h3>...</h3>
+      </header>
+      <nav>
+        <h1>Países</h1>
+        <ul>
+          <li><a href="#pgBrasil">Brasil</a></li>
+          <li><a href="#pgPeru">Perú</a></li>
+        </ul>
+        <h1>Indicadores</h1>
+        <select id="indicadores">
+        </select>
+        <button id="btnIr"><a href="#pgIndicador">Ir</a></button>
+      </nav>
+    </main>
+  </section>
+
+  <section id="pgIndicador">
+    <h1>Indicador:</h1>
+    <h3 id="indicadorName"></h3>
+    <p id="publicarGraficosIndicador"></p>
+  </section>
+
+  <section id="pgBrasil">
+    <h1>Brasil</h1>
+    <h1>Indicadores</h1>
+    <select id="indicadoresBR">
+      <option>Selecione...</option>
+    </select>
+  </section>
+
+  <section id="pgPeru">
+      <h1>Perú</h1>
+      <h1>Indicadores</h1>
+      <select id="indicadoresPER">
+      </select>
+    </section>
+
+  <script src="main.js"></script>
+  <script src="data/worldbank/worldbank.js"></script>
+</body>
+
 </html>
