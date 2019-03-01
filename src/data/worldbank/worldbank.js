@@ -19481,7 +19481,7 @@ const WORLDBANK = {
         "countryName": "Brasil",
         "countryCode": "BRA",
         "indicatorName": "Mujeres que creen que está justificado que un marido golpee a su esposa cuando sale sin avisarle (%)",
-        "indicatorCode": "SG.VAW.GOES.ZS"
+        "indicatorCode": " G.VAW.GOES.ZS"
       },
       {
         "data": {

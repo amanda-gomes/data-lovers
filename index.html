@@ -5,55 +5,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Data Lovers</title>
-  <link href="src/style.css" rel="stylesheet" type="text/css"/>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-  <section id="pgInicial">
+  <section id="pageInicial">
     <main>
       <header>
-        <h1>Latino América Desenvolvida</h1>
+        <h1>Indicadores de Desenvolvimento </h1>
       </header>
       <nav>
         <h1>Países</h1>
         <ul>
-          <li><a href="#pgBrasil">Brasil</a></li>
-          <li><a href="#pgPeru">Perú</a></li>
+          <li><a href="#pageBrasil">Brasil</a></li>
+          <li><a href="#pagePeru">Peru</a></li>
         </ul>
         <h1>Indicadores</h1>
-        <select id="indicadores">
+        <select id="indicators">
         </select>
-        <button id="btnIr"><a href="#pgIndicador">Ir</a></button>
+        <button id="btnGo">Ir</button>
       </nav>
     </main>
   </section>
 
-  <section id="pgIndicador">
-    <h1>Indicador:</h1>
-    <h3 id="indicadorName"></h3>
-    <p id="graficoBR"></p>
-    <p id="graficoPER"></p>
+  <section id="pageIndicator">
+    <h1>Indicadores:</h1>
+    <h3 id="indicatorName"></h3>
+    <div id="chartBR"></div>
+    <div id="chartPER"></div>
   </section>
 
-  <section id="pgBrasil">
+  <section id="pageBrasil">
     <h1>Brasil</h1>
     <h1>Indicadores</h1>
-    <select id="indicadoresBR">
+    <select id="indicatorsBR">
       <option>Selecione...</option>
     </select>
   </section>
 
-  <section id="pgPeru">
-      <h1>Perú</h1>
-      <h1>Indicadores</h1>
-      <select id="indicadoresPER">
-      </select>
-    </section>
+  <section id="pagePeru">
+    <h1>Peru</h1>
+    <h1>Indicadores</h1>
+    <select id="indicatorsPER">
+    </select>
+  </section>
 
   <script src="src/main.js"></script>
   <script src="src/data/worldbank/worldbank.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
+ 
 </body>
 
 
