@@ -15,16 +15,21 @@
       <header>
         <h1>Indicadores de Desenvolvimento </h1>
       </header>
+      <h2>Análise aqui!</h2>
+      <h3>3 países: Brasil, Perú e Chile</h3>
+      <h3>3 períodos: 2015, 2016 e 2017</h3>
+      <h3>139 indicadores: vários setores</h3>
       <nav>
-        <h1>Países</h1>
+        <h1>Por país:</h1>
         <ul>
           <li><a href="#pageBrasil">Brasil</a></li>
           <li><a href="#pagePeru">Peru</a></li>
+          <li><a href="#pageChile">Chile</a></li>
         </ul>
-        <h1>Indicadores</h1>
+        <h1>Por indicador:</h1>
         <select id="indicators">
         </select>
-        <button id="btnGo">Ir</button>
+        <a href="#pageIndicator"><button id="btnGo">Gerar gráfico</button></a>
       </nav>
     </main>
   </section>
@@ -32,8 +37,10 @@
   <section id="pageIndicator">
     <h1>Indicadores:</h1>
     <h3 id="indicatorName"></h3>
-    <div id="chartBR"></div>
-    <div id="chartPER"></div>
+    <div id="chart"></div>
+    <a href="#pageInicial">
+      <p>Voltar para página inicial</p>
+    </a>
   </section>
 
   <section id="pageBrasil">
@@ -42,21 +49,35 @@
     <select id="indicatorsBR">
       <option>Selecione...</option>
     </select>
+    <button id="btnBR">Gerar gráfico</button>
+    <p id="chartBR"></p>
+    <a href="#pageInicial"><p>Voltar para página inicial</p></a>
   </section>
 
   <section id="pagePeru">
     <h1>Peru</h1>
     <h1>Indicadores</h1>
     <select id="indicatorsPER">
+      <option>Selecione...</option>
     </select>
+    <button id="btnPER">Gerar gráfico</button>
+    <p id="chartPER"></p>
+    <a href="#pageInicial"><p>Voltar para página inicial</p></a>
+  </section>
+
+  <section id="pageChile">
+    <h1>Chile</h1>
+    <h1>Indicadores</h1>
+    <select id="indicatorsCHL">
+      <option>Selecione...</option>
+    </select>
+    <button id="btnCHL">Gerar gráfico</button>
+    <p id="chartCHL"></p>
+    <a href="#pageInicial"><p>Voltar para página inicial</p></a> 
   </section>
 
   <script src="src/main.js"></script>
   <script src="src/data/worldbank/worldbank.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  
- 
 </body>
-
-
 </html>
