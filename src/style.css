@@ -1,26 +1,95 @@
-
-  #pageInicial {
-    width: 80vw;
-    height: 50vw;
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quattrocento', serif;
+  }
+  
+  .navBar {
+    background-color: #f7f4f4;
+    padding: 10px;
+    display:flex;
+    justify-content: space-evenly;
+  }  
+  
+  .navBar img{
+    width: 25%;
+    height: 20%; 
   }
 
-  #pageIndicator {
-    width: 80vw;
+  .navBar li {
+    font-size: 20px;
+    list-style-type: none;
+    align-self: center;
+    color: blue;
+  }
+
+  .navBar li:hover{
+    color:#561010;
+  }
+  
+  .text {
+    background-color:#5a5e7a;
+    padding: 30px;
+    color: #e6f2ee;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+  }
+
+  .text p{
+    margin: 10px 20px 0 20px;
+  }
+
+  .btFlag {
+    background-color:#5a5e7a;
+    text-align: center;
+  }
+  
+  .btFlag img{
+    width: 5%;
+    height: 5%;
+  }
+  
+  .btFlag button{
+    width: 15%;
+    font-size: 25px;
+    margin:0 0 40px 0;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+    
+  .indicator{
+    background-color: #f7f4f4;
+    height: 80vw;
+    text-align: center;
+  }
+
+  .indicator select{
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+
+  .indicator button{
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+  
+  .brasil{
+    background-color: #f7f4f4;
     height: 80vw;
   }
 
-  #pageBrasil {
-    width: 80vw;
+  .peru {
+    background-color: #f7f4f4;
     height: 80vw;
   }
 
-  #pagePeru {
-    width: 80vw;
-    height: 80vw;
-  }
-
-  #pageChile {
-    width: 80vw;
+  .chile {
+    background-color: #f7f4f4;
     height: 80vw;
   }
 
