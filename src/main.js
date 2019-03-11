@@ -20,8 +20,8 @@ function listIndicator() {
     <option value='${indicator["indicatorName"]}'> ${indicator["indicatorName"]} </option>
   `)}` + "</select>";
 
-  let SelectBr = document.getElementById("indicatorsBR");
-  SelectBr.innerHTML =
+  let SelectBR = document.getElementById("indicatorsBR");
+  SelectBR.innerHTML =
     "<select id='indicatorsBR'>" +
     `${WORLDBANK["BRA"]["indicators"].map((indicator) => `
     <option value='${indicator["indicatorName"]}'> ${indicator["indicatorName"]} </option>
@@ -250,3 +250,4 @@ function showChartCHL (){
   let chart = new google.visualization.ComboChart(document.getElementById('chartCHL'));
   chart.draw(data, options);
 }
+

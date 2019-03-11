@@ -1,6 +1,0 @@
-let arr = [1, 2, 3, 4, 5];
-
-let inicial = 0;
-
-let arrMedia = (arr.reduce((soma, atual) => soma + atual, inicial))/arr.length;
-
