@@ -5,45 +5,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Data Lovers</title>
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
   <link href="src/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
   <section id="pageInicial">
-    <main>
-      <header>
-        <h1>Indicadores de Desenvolvimento </h1>
-      </header>
-      <h2>Análise aqui!</h2>
-      <h3>3 países: Brasil, Perú e Chile</h3>
-      <h3>3 períodos: 2015, 2016 e 2017</h3>
-      <h3>139 indicadores: vários setores</h3>
-      <nav>
-        <h1>Por país:</h1>
-        <ul>
-          <li><a href="#pageBrasil">Brasil</a></li>
-          <li><a href="#pagePeru">Peru</a></li>
-          <li><a href="#pageChile">Chile</a></li>
-        </ul>
-        <h1>Por indicador:</h1>
-        <select id="indicators">
-        </select>
-        <a href="#pageIndicator"><button id="btnGo">Gerar gráfico</button></a>
+    <header>
+      <nav class="navBar">
+        <img src="asablue.png" alt="asa de anjo"></img>
+        <br><br />
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="">Invista</a></li>
       </nav>
+    </header>
+    <main>
+      <div class="text">
+        <p>Os Indicadores de Desenvolvimento Mundial (WDI) são uma compilação extensa e holística de
+          dados pelo Banco Mundial sobre o desenvolvimento global.Possui mais de 1. 300 indicadores de desenvolvimento
+          de séries temporais com 214 nações e cerca de 30 grupos de
+          países. Esses indicadores podem ser comparados horizontalmente em todos os países e são úteis para estudantes,
+          formuladores de políticas, analistas, funcionários, entre outros.
+        </p>
+        <p>A compilação de Indicadores de Desenvolvimento Mundial, que é publicada anualmente (atualizada
+          trimestralmente
+          online em abril, julho, setembro e dezembro)
+          é resultado de anos de trabalho duro por muitas pessoas, organizações privadas, fontes oficialmente
+          reconhecidas e agências governamentais em vários níveis.
+          Para ajudar investidores anjos que querem realizar negócios no Brasil, Peru e Chile, apresentamos
+          análises gráficas de 139 indicadores de desenvolvimento destes países no período de 2015 a 2017. A análise
+          pode ser feita por país ou por indicador.
+        </p>
+      </div>
+      <div class="btFlag">
+        <a href="#pageBrasil" id="BR"><img src="icone brasil.png" alt="bandeira do Brasil"></a>
+        <a href="#pagePeru" id="PER"><img src="icone peru.png" alt="bandeira do Peru"></a>
+        <a href="#pageChile" id="CHL"><img src="icone chile.png" alt="bandeira do Chile"></a>
+        <br></br>
+        <a href="#pageIndicator"><button id="btnIndicator">INDICADORES</button></a>
+      </div>
     </main>
   </section>
 
-  <section id="pageIndicator">
-    <h1>Indicadores:</h1>
+  <section class="indicator" id="pageIndicator">
+    <h1>Indicadores</h1>
+    <select id="indicators"></select>
+    <button id="btnGo">Gerar gráfico</button>
     <h3 id="indicatorName"></h3>
-    <div id="chart"></div>
-    <a href="#pageInicial">
-      <p>Voltar para página inicial</p>
+    <div class="chart" id="chart"></div>
+    <a href="#pageInicial" id="goBack">
+      <p id="back1">Voltar</p>
     </a>
   </section>
 
-  <section id="pageBrasil">
+  <section class="brasil" id="pageBrasil">
     <h1>Brasil</h1>
     <h1>Indicadores</h1>
     <select id="indicatorsBR">
@@ -51,10 +67,12 @@
     </select>
     <button id="btnBR">Gerar gráfico</button>
     <p id="chartBR"></p>
-    <a href="#pageInicial"><p>Voltar para página inicial</p></a>
+    <a href="#pageInicial">
+      <p id="back2">Voltar</p>
+    </a>
   </section>
 
-  <section id="pagePeru">
+  <section class="peru" id="pagePeru">
     <h1>Peru</h1>
     <h1>Indicadores</h1>
     <select id="indicatorsPER">
@@ -62,10 +80,12 @@
     </select>
     <button id="btnPER">Gerar gráfico</button>
     <p id="chartPER"></p>
-    <a href="#pageInicial"><p>Voltar para página inicial</p></a>
+    <a href="#pageInicial">
+      <p id="back3">Voltar</p>
+    </a>
   </section>
 
-  <section id="pageChile">
+  <section class="chile" id="pageChile">
     <h1>Chile</h1>
     <h1>Indicadores</h1>
     <select id="indicatorsCHL">
@@ -73,11 +93,14 @@
     </select>
     <button id="btnCHL">Gerar gráfico</button>
     <p id="chartCHL"></p>
-    <a href="#pageInicial"><p>Voltar para página inicial</p></a> 
+    <a href="#pageInicial">
+      <p id="back4">Voltar</p>
+    </a>
   </section>
 
   <script src="src/main.js"></script>
   <script src="src/data/worldbank/worldbank.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
+
 </html>
