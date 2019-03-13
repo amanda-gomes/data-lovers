@@ -45,44 +45,34 @@ filtrá-los e fazer algum cálculo agregado**.
 
 1. Primeiro gráfico:
 
-1. 1. Página Inicial:
-![Página Inicial - clicando no país `Brasil`](src/img/1_inicial_1.jpeg)
+![Página Inicial - clicando no país `Brasil`](src/img/inicial_1.jpg)
 
-1. 2. Página Brasil:
-![Página Brasil - clicando no setor `Saúde`](src/img/2_brasil_1.jpeg)
+![Página Brasil - clicando no setor `Saúde`](src/img/brasil_1.jpg)
 
-1. 3. Página Setor Saúde Brasil
-![Página Setor Saúde no Brasil](src/img/3_indicador_por_pais.jpeg)
+![Página Setor Saúde no Brasil](src/img/indicador_por_pais.jpg)
 
 
 2. Segundo gráfico:
 
-2. 1. Página Inicial:
-![Página Inicial - clicando no país `Brasil`](src/img/1_inicial_1.jpeg)
+![Página Inicial - clicando no país `Brasil`](src/img/inicial_1.jpg)
 
-2. 2. Página Brasil:
-![Página Brasil - selecionando o período `2010`](src/img/2_brasil_2.jpeg)
+![Página Brasil - selecionando o período `2010`](src/img/brasil_2.jpg)
 
-2. 3. Página por Período Brasil
-![Página por Período no Brasil](src/img/4_indicadores_pais_por_ano.jpeg)
+![Página por Período no Brasil](src/img/indicadores_pais_por_ano.jpg)
 
 
 3. Terceiro gráfico:
 
-3. 1. Página Inicial:
-![Página Inicial - clicando no setor `Saúde`](src/img/1_inicial_2.jpeg)
+![Página Inicial - clicando no setor `Saúde`](src/img/inicial_2.jpg)
 
-3. 2. Página Setor Saúde Geral
-![Página Setor Saúde Geral](src/img/5_indicador_de_todos_os_paises.jpeg)
+![Página Setor Saúde Geral](src/img/indicador_de_todos_os_paises.jpg)
 
 
 4. Quarto gráfico:
 
-4. 1. Página Inicial:
-![Página Inicial - selecionando o período `2010`](src/img/1_inicial_3.jpeg)
+![Página Inicial - selecionando o período `2010`](src/img/inicial_3.jpg)
 
-3. 2. Página por Período Geral
-![Página por Período Geral](src/img/6_indicador_de_todos_os_paises_por_ano.jpeg)
+![Página por Período Geral](src/img/indicador_de_todos_os_paises_por_ano.jpg)
 
 #### Testes de usabilidade
 
