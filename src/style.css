@@ -1,101 +1,270 @@
-  body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Quattrocento', serif;
-  }
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quattrocento', serif;
+}
+
+.navBar {
+  background-color: #041e47;
+  padding: 10px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}  
+
+.navBar img{
+  width: 10%;
+  height: 5%; 
+}
+
+.navBar a {
+  font-size: 20px;
+  text-decoration: none;
+  align-self: center;
+  color:#8dd5ef;
+  justify-self: end;
+}
+
+.navBar a:hover{
+  color:#561010;
+}
+
+.pageFirst{
+  height: 60vw;
+  background-image: url(img/background\ inicio.png);
+  background-size: 100%;
+}
+
+.text {
+  padding: 30px;
+  color:black;
+  display: flex;
+  flex-direction: column;
+}
+
+.text img{
+  width: 15%;
+  height: 5%;
+  align-self: center;
+}
+
+.text p{
+  margin: 0 10px 0 350px;
+  align-self: center;
+  font-size: 20px;
+  text-align: right;
+}
+
+.btFlag {
+  text-align: center;
+}
+
+.btFlag button{
+  width: 15%;
+  font-size: 25px;
+  color:black;
+  background-color: transparent;
+  border: 1px solid black;
+}
   
-  .navBar {
-    background-color: #f7f4f4;
-    padding: 10px;
-    display:flex;
-    justify-content: space-evenly;
-  }  
-  
-  .navBar img{
-    width: 25%;
-    height: 20%; 
-  }
+.btFlag img{
+  width: 5%;
+  height: 5%;
+}
 
-  .navBar li {
-    font-size: 20px;
-    list-style-type: none;
-    align-self: center;
-    color: blue;
-  }
+.indicator{
+  background-image: url(img/background.png);
+  background-size: 100%;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
 
-  .navBar li:hover{
-    color:#561010;
-  }
-  
-  .text {
-    background-color:#5a5e7a;
-    padding: 30px;
-    color: #e6f2ee;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: justify;
-  }
+.indicator select{
+  color: black;
+  background-color: transparent;
+  width: 40%;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid black;
+  align-self: center;
+}
 
-  .text p{
-    margin: 10px 20px 0 20px;
-  }
+.indicator button{
+  color: black;
+  font-size: 15px;
+  background-color: transparent;
+  width: 10%;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid black;
+  align-self: center;
+}
 
-  .btFlag {
-    background-color:#5a5e7a;
-    text-align: center;
-  }
-  
-  .btFlag img{
-    width: 5%;
-    height: 5%;
-  }
-  
-  .btFlag button{
-    width: 15%;
-    font-size: 25px;
-    margin:0 0 40px 0;
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-  }
-    
-  .indicator{
-    background-color: #f7f4f4;
-    height: 80vw;
-    text-align: center;
-    visibility: hidden;
-  }
+.indicator h3 {
+  font-size: 15px;
+  align-self: center;
+}
 
-  .indicator select{
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
-  }
+.indicator h6{
+  font-size: 1px;
+  color: transparent;
+}
 
-  .indicator button{
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
-  }
-  
-  .brasil{
-    background-color: #f7f4f4;
-    height: 80vw;
-    visibility: hidden;
-  }
+.indicator a{
+  font-size: 30px;
+  color: white;
+  align-self: flex-start;
+  margin: 0 30px;
+  text-decoration: none;
+}
 
-  .peru {
-    background-color: #f7f4f4;
-    height: 80vw;
-    visibility: hidden;
-  }
+.chartIndicator{
+  width: 50%;
+  height: 40%;
+  align-self: center;
+}
 
-  .chile {
-    background-color: #f7f4f4;
-    height: 80vw;
-    visibility: hidden;
-  }
+.brasil{
+  background-image: url(img/background.png);
+  background-size: 100%;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
 
-  
+.brasil select{
+  color: black;
+  background-color: transparent;
+  width: 40%;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.brasil button{
+  color: black;
+  font-size: 15px;
+  background-color: transparent;
+  width: 10%;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.brasil h3 {
+  font-size: 15px;
+  align-self: center;
+}
+
+.brasil a{
+  font-size: 30px;
+  color: white;
+  align-self: flex-start;
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.chartBrasil{
+  width: 50%;
+  height: 40%;
+  align-self: center;
+}
+
+.peru {
+  background-image: url(img/background.png);
+  background-size: 100%;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.peru select{
+  color: black;
+  background-color: transparent;
+  width: 40%;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.peru button{
+  color: black;
+  font-size: 15px;
+  background-color: transparent;
+  width: 10%;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.peru h3 {
+  font-size: 15px;
+  align-self: center;
+}
+
+.peru a{
+  font-size: 30px;
+  color: white;
+  align-self: flex-start;
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.chartPeru{
+  width: 50%;
+  height: 40%;
+  align-self: center;
+}
+
+.chile {
+  background-image: url(img/background.png);
+  background-size: 100%;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.chile select{
+  color: black;
+  background-color: transparent;
+  width: 40%;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.chile button{
+  color: black;
+  font-size: 15px;
+  background-color: transparent;
+  width: 10%;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.chile h3 {
+  font-size: 15px;
+  align-self: center;
+}
+
+.chile a{
+  font-size: 30px;
+  color: white;
+  align-self: flex-start;
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.chartChile{
+  width: 50%;
+  height: 40%;
+  align-self: center;
+}
+
+
+
 
