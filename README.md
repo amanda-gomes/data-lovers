@@ -23,15 +23,15 @@ Com esses dados, criamos uma página web que permite **visualizar os dados,
 filtrá-los e fazer algum cálculo agregado**. 
 
 
-### Definição do produto
+## Definição do produto
 
-#### Persona:
+### Persona:
 - Um grupo de invetidores que deseja investir em startups sociais no Brasil, Perú e Chile.
 
-#### Objetivo da persona:
+### Objetivo da persona:
 - Investidores que possuem uma vasta carteira de investimento na América do Norte e Europa com investimentos em startups e iniciativas sociais.
 
-#### Solução do problema:
+### Solução do problema:
 - Os investimentos serão realizados conforme os indicadores de desenvolvimento destes países. Foi solicitado pelo usuário uma aplicação web na qual seja possível analisar de forma comparativa entre os 3 países cada indicador e o valor de cada indicador nos anos de 2015 à 2017 em cada país.
 
 A aplicação web desenvolvida permite que o usuário análise graficamente cada indicador 
@@ -41,9 +41,9 @@ da seguinte forma:
 * Comparar valores do indicador nos países Brasil, Perú e Chile nos anos 2015 a 2017.
 
 
-### Desenho da interface de usuário
+## Desenho da interface de usuário
 
-#### Protótipo
+### Protótipo
 
 - O protótipo foi desenvolvido utilizando o aplicativo Marvel:
 
@@ -71,11 +71,11 @@ da seguinte forma:
 ![Página Inicial - selecionando o período `2010`](src/img/inicial_3.jpg)
 ![Página por Período Geral](src/img/indicador_de_todos_os_paises_por_ano.jpg)
 
-#### Testes de usabilidade
+### Testes de usabilidade
 
 - Ao realizar o teste de usabilidade, verificou-se que o modelo sugerido de filtro não atendia a necessidade do usuário, pois o banco de dados fornecido não continha as informações divididas por setores especificados no protótipo. A solução para entregar o resultado desejado ao usuário foi apresentar todos os indicadores sem a divisão de setores.
 
-### Checklist
+## Checklist
 
 * [ ] Usamos VanillaJS.
 * [ ] Incluimos _Definição de produto_ clara e informativa no `README.md`.
