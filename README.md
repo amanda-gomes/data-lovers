@@ -51,8 +51,8 @@ da seguinte forma:
 
 1. Primeiro gráfico:
 
-![Página-Inicial-clicando-no-país-Brasil](src/img/inicial-1.jpg)
-![Página Brasil - clicando no setor `Saúde`](src/img/brasil_1.jpg)
+![Página Inicial - clicando no país Brasil](src/img/inicial1.jpg)
+![Página Brasil - clicando no setor `Saúde`](src/img/brasil1.jpg)
 ![Página Setor Saúde no Brasil](src/img/indicador_por_pais.jpg)
 
 2. Segundo gráfico:
