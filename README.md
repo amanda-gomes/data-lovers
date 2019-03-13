@@ -45,7 +45,7 @@ filtrá-los e fazer algum cálculo agregado**.
 
 1. Primeiro gráfico:
 
-![Página_Inicial_-_clicando_no_país_`Brasil`](src/img/inicial_1.jpg)
+![Página](src/img/inicial_1.jpg)
 
 ![Página Brasil - clicando no setor `Saúde`](src/img/brasil_1.png)
 
