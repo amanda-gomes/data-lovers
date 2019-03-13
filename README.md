@@ -39,7 +39,8 @@ da seguinte forma:
 
 * Comparar valores do indicador no país selecionado nos anos de 2015 à 2017.
 * Comparar valores do indicador nos países Brasil, Perú e Chile nos anos 2015 a 2017.
-
+ 
+ [Acessar Aplicação pelo Git Pages](https://amanda-gomes.github.io/data-lovers/9)
 
 ## Desenho da interface de usuário
 
