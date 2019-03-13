@@ -1,6 +1,6 @@
 window.onload = function () {
   listIndicator();
-};
+}
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
@@ -48,7 +48,6 @@ function listIndicator() {
     `${WORLDBANK["CHL"]["indicators"].map((indicator) => `
     <option value='${indicator["indicatorName"]}'> ${indicator["indicatorName"]} </option>
   `)}` + "</select>";
-
 }
 
 function chartIndicators() {
@@ -58,7 +57,6 @@ function chartIndicators() {
   chart.innerHTML = "<div id='chart' style='height: 200px;'></div>";
   google.charts.load('current', { 'packages': ['corechart'] });
   google.charts.setOnLoadCallback(showChart);
-
 }
 
 function showChart() {
@@ -101,7 +99,6 @@ function showChart() {
     } else {
       average.push((valueBR[index] + valuePER[index] + valueCHL[index]) / 3)
     }
-
   }
 
   let data = google.visualization.arrayToDataTable([
@@ -121,7 +118,6 @@ function showChart() {
 
   let chart = new google.visualization.ComboChart(document.getElementById('chart'));
   chart.draw(data, options);
-
 }
 
 function chartBR() {

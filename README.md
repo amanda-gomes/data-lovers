@@ -2,11 +2,7 @@
 
 ## Índice
 
-* [Preâmbulo](#preâmbulo)
 * [Descrição](#resumo-do-projeto)
-* [Considerações gerais](#considerações-gerais)
-* [Objetivos de aprendizagem](#objetivos-de-aprendizagem)
-* [Parte obrigatória](#parte-obrigatória)
 * [Parte opcional](#parte-opcional-hacker-edition)
 * [Considerações técnicas](#considerações-técnicas)
 * [Primeiros passos](#primeiros-passos)
@@ -15,115 +11,78 @@
 
 ***
 
-## Preâmbulo
-
-Segundo um [estudo da IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-90% dos dados que existem hoje foram criados durante os últimos dois anos.
-A cada dia geramos 2,5 trilhões de bytes de dados, uma cifra sem precedentes.
-Apesar disso, os dados por sozinhos são de pouca utilidade. Para que essas
-grandes quantidades de dados se convertam em **informação** fácil de ler para
-os usuários, temos que entendê-los e processá-los. Uma maneira simples
-de se fazer isso seria criando _interfaces_ e _visualizações_.
-Na seguinte imagem, você pode ver de que forma, com os dados que vemos na parte
-esquerda, é possível construir uma interface amigável e legível para o usuário.
-
-![json-interface](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
-
-Você pode ver os detalhes dos dados neste [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-e a interface construída neste [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
-
 ## Resumo do projeto
 
-Neste projeto **você desenvolverá uma _página web_ para visualizar um
+Neste projeto **desenvolvemos uma _página web_ para visualizar um
 _conjunto (set) de dados_** que se adeque ao que seu usuário necessita.
-Fornecemos a vocês uma série de dados de diferentes _temáticas_
-para que explore e decida com o que gostaria de trabalhar. Nós elegemos
-especificamente estes sets de dados porque acreditamos que se adequem bem a esta
-etapa de sua aprendizagem.
-Uma vez definida sua área de interesse, entenda quem é seu usuario e o que ele
-necessita saber ou ver exatamente; assim já poderá criar uma interface que o
-ajude a interagir e entender melhor os dados.
-Estes são os dados que propomos:
+Área de interesse escolhida:
 
 * [Indicadores de desenvolvimento](src/data/worldbank/worldbank.json):
   Indicadores de desenvolvimento do Banco Mundial de alguns países (Brasil, Chile, México e Peru). Estes dados incluim indicadores
-  demográficos, econômicos e comerciais.
-* [Pokémon](src/data/pokemon/pokemon.json):
-  Neste set você encontrará uma lista com os 151 Pokémons da região de Kanto,
-  junto com suas respectivas estatísticas usadas no jogo [Pokémon GO](pokemongolive.com).
-* [Steam notícias](src/data/steam/steam.json):
-  Lista de notícias relacionadas aos jogos presentes na plataforma [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de dados mostra a lista de jogadores em uma liga do
-  jogo League of Legends (LoL). Você pode revisar a documentação de sua API
-  neste link [link](https://developer.riotgames.com/api-methods/).
-* [Pessoas feridas por meios de transporte nos EUA](src/data/injuries/injuries.json).
-  Este set nos mostra o número de pessoas feridas em acidentes em
-  meios de transporte, com a data anual desde 1960 e categorizada por
-  tipo de transporte (aéreo, barco, automóvel, moto, bicicleta, etc).
 
-Como produto final você terá que criar uma página web que permita **visualizar
-os dados, filtrá-los, ordená-los e fazer algum cálculo agregado**. Como esclarecimento,
-ao falar de cálculo agregado, nos referimos a diferentes cálculos que se pode fazer
-com os dados e trazer informações ainda mais relevantes para o usuário. Uma opção
-seriam cálculos estatísticos com média, mínimo e máximo. Por exepmplo, se temos
-uma coleção que representa um grupo de pessoas e cada pessoa está representada
-com um _objeto_ com uma _propriedade_ `altura`, poderíamos calcular a
-altura média em um grupo, entre outras coisas.
-
-Esperamos que cada set de dados esteja acompanhado de uma identidade gráfica
-condizente. Você pode pesquisar na internet para ter referências sobre cada um
-dos temas e trabalhar em uma identidade para sua página.
-
-## Considerações gerais
-
-* Este projeto deve ser feito em duplas.
-* O projeto será entregue através do Github (commit/push) e a
-  interface será entregue pelo Github Pages.
-
-## Objetivos de aprendizagem
-
-O objetivo principal deste projeto é que você aprenda a desenvolver
-uma interface web onde se possa visualizar e manipular dados, entendendo o
-que o usuário necessita.
-
-Falando com mais clareza, você aprenderá a:
-
-* Aplicar e aprofundar tudo o que aprendeu no projeto anterior.
-* Pensar nas **necessidades dos usuários** para criar uma interface que faça
-  sentido e com tarefas claras.
-* Trabalhar com suas definições de pronto (_definition of done_) na organização
-  e planificação de seu trabalho.
-* Definir os dados e de que forma mostrá-los no produto, baseando-se em seu
-  **entendimento de usuário**.
-* Criar produtos que sigam os **princípios básicos de usabilidade**.
-* Iterar o desenho do produto, baseando-se nos resultados dos
-  **testes de usabilidade**.
-* Manipular **_arrays_ e _objetos_**.
-* **Manipular o DOM** (agregar elementos dinamicamente, baseados nos dados).
-* **Manejar eventos do DOM** para permitir interação com o usuário
-  (dados filtrados, ordenados, etc).
-* Entender os benefícios e complexidades de **trabalhar em equipe** em um
-  ambiente de incertezas.
-
-## Parte Obrigatória
-
-Os critérios para considerar que você completou o projeto são:
+Com esses dados, criamos uma página web que permite **visualizar os dados,
+filtrá-los e fazer algum cálculo agregado**. 
 
 ### Definição do produto
 
-Documente brevemente seu trabalho no arquivo `README.md` de seu repositório,
-nos contando como foi seu processo de desenvolvimento do projeto e como
-acredita que seu produto resolve o problema (os problemas) do seu usuário.
+#### Persona:
+- Um grupo de invetidores que deseja investir em startups sociais no Brasil, Perú e Chile.
+
+#### Objetivo da persona:
+- Investidores que possuem uma vasta carteira de investimento na América do Norte e Europa com investimentos em startups e iniciativas sociais.
+
+#### Solução do problema:
+- Os investimentos serão realizados conforme os indicadores de desenvolvimento destes países. Foi solicitado pelo usuário uma aplicação web na qual seja possível analisar de forma comparativa entre os 3 países cada indicador e o valor de cada indicador nos anos de 2015 à 2017 em cada país.
+
 
 ### Desenho da interface de usuário
 
 #### Protótipo
-Durante seu trabalho você deverá ter feito esboços de sua solução usando papel
-e lápis. Recomendamos que você tire fotos de todas as iterações que faça, suba
-para seu repositório, e as mencione em seu`README.md`. Caso queira, pode
-desenhar protótipos de média fidelidade usando o [Marvel](https://marvelapp.com/)
-ou o [Figma](https://www.figma.com/).
+- O protótipo foi desenvolvido utilizando o aplicativo Marvel:
+
+* [Protótipo Marvel](https://marvelapp.com/4f85cje/screen/53773929)
+
+
+1. Primeiro gráfico:
+
+1. 1. Página Inicial:
+![Página Inicial - clicando no país `Brasil`](src/img/1_inicial_1.jpeg)
+
+1. 2. Página Brasil:
+![Página Brasil - clicando no setor `Saúde`](src/img/2_brasil_1.jpeg)
+
+1. 3. Página Setor Saúde Brasil
+![Página Setor Saúde no Brasil](src/img/3_indicador_por_pais.jpeg)
+
+
+2. Segundo gráfico:
+
+2. 1. Página Inicial:
+![Página Inicial - clicando no país `Brasil`](src/img/1_inicial_1.jpeg)
+
+2. 2. Página Brasil:
+![Página Brasil - selecionando o período `2010`](src/img/2_brasil_2.jpeg)
+
+2. 3. Página por Período Brasil
+![Página por Período no Brasil](src/img/4_indicadores_pais_por_ano.jpeg)
+
+
+3. Terceiro gráfico:
+
+3. 1. Página Inicial:
+![Página Inicial - clicando no setor `Saúde`](src/img/1_inicial_2.jpeg)
+
+3. 2. Página Setor Saúde Geral
+![Página Setor Saúde Geral](src/img/5_indicador_de_todos_os_paises.jpeg)
+
+
+4. Quarto gráfico:
+
+4. 1. Página Inicial:
+![Página Inicial - selecionando o período `2010`](src/img/1_inicial_3.jpeg)
+
+3. 2. Página por Período Geral
+![Página por Período Geral](src/img/6_indicador_de_todos_os_paises_por_ano.jpeg)
 
 #### Testes de usabilidade
 
