@@ -40,12 +40,12 @@ filtrá-los e fazer algum cálculo agregado**.
 #### Protótipo
 - O protótipo foi desenvolvido utilizando o aplicativo Marvel:
 
-* [Protótipo Marvel](https://marvelapp.com/4f85cje/screen/53773929)
+[Protótipo Marvel](https://marvelapp.com/4f85cje/screen/53773929)
 
 
 1. Primeiro gráfico:
 
-![Página Inicial - clicando no país `Brasil`](src/img/inicial_1.png)
+![Página_Inicial_-_clicando_no_país_`Brasil`](src/img/inicial_1.jpg)
 
 ![Página Brasil - clicando no setor `Saúde`](src/img/brasil_1.png)
 
