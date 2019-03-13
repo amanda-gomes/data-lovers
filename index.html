@@ -6,98 +6,85 @@
   <meta name="viewport" content="width=device-width">
   <title>Data Lovers</title>
   <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
   <link href="src/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <section id="pageInicial">
-    <header>
-      <nav class="navBar">
-        <img src="src/img/asablue.png" alt="asa de anjo"></img>
-        <br><br/>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Contato</a></li>
-        <li><a href="">Invista</a></li>
-      </nav>
-    </header>
-    <main>
+  <header id="pageInicial">
+    <nav class="navBar">
+      <img src="https://media.giphy.com/media/kFymCSUbvkLXpPyqQT/giphy.gif" alt="asa de anjo"></img>
+      <img src="src/img/seja anjo.png"></img>
+      <br><br />
+      <a href="">Sobre</a>
+      <a href="">Contato</a>
+      <a href="">Invista</a>
+    </nav>
+    <section class="pageFirst">
       <div class="text">
-        <p>Os Indicadores de Desenvolvimento Mundial (WDI) são uma compilação extensa e holística de
-          dados pelo Banco Mundial sobre o desenvolvimento global.Possui mais de 1. 300 indicadores de desenvolvimento
-          de séries temporais com 214 nações e cerca de 30 grupos de
-          países. Esses indicadores podem ser comparados horizontalmente em todos os países e são úteis para estudantes,
-          formuladores de políticas, analistas, funcionários, entre outros.
-        </p>
-        <p>A compilação de Indicadores de Desenvolvimento Mundial, que é publicada anualmente (atualizada
-          trimestralmente
-          online em abril, julho, setembro e dezembro)
-          é resultado de anos de trabalho duro por muitas pessoas, organizações privadas, fontes oficialmente
-          reconhecidas e agências governamentais em vários níveis.
-          Para ajudar investidores anjos que querem realizar negócios no Brasil, Peru e Chile, apresentamos
-          análises gráficas de 139 indicadores de desenvolvimento destes países no período de 2015 a 2017. A análise
+        <p> Com o objetivo de ajudar investidores anjos que querem realizar negócios no Brasil, Peru e Chile,
+          apresentamos análises gráficas de 139 indicadores de desenvolvimento destes países no período de 2015 a 2017. A análise
           pode ser feita por país ou por indicador.
         </p>
+        <img src="https://media.giphy.com/media/9ram4CnmXzDmI7pLkb/giphy.gif"></img>        
       </div>
       <div class="btFlag">
+        <a href="#pageIndicator"><button id="btnIndicator">INDICADORES</button></a>
+        <br></br>
         <a href="#pageBrasil" id="BR"><img src="src/img/icone brasil.png" alt="bandeira do Brasil"></a>
         <a href="#pagePeru" id="PER"><img src="src/img/icone peru.png" alt="bandeira do Peru"></a>
         <a href="#pageChile" id="CHL"><img src="src/img/icone chile.png" alt="bandeira do Chile"></a>
-        <br></br>
-        <a href="#pageIndicator"><button id="btnIndicator">INDICADORES</button></a>
       </div>
-    </main>
-  </section>
+  </header>
+  <main>
+    </section>
 
-  <section class="indicator" id="pageIndicator">
-    <h1>Indicadores</h1>
-    <select id="indicators"></select>
-    <button id="btnGo">Gerar gráfico</button>
-    <h3 id="indicatorName"></h3>
-    <div class="chart" id="chart"></div>
-    <a href="#pageInicial" id="goBack">
-      <p id="backInd">Voltar</p>
-    </a>
-  </section>
+    <section class="indicator" id="pageIndicator">
+      <h6 id="indicatorName"></h6>
+      <h3>Selecione o indicador que deseja analisar</h3>
+      <select id="indicators"></select>
+      <button id="btnGo"><i class="fas fa-chart-bar"></i> Gerar gráfico</button>
+      <p class="chartIndicator" id="chart"></p>
+      <h3>*Alguns indicadores não possuem dados para análise.</h3>
+      <a href="#pageInicial">
+        <h2 id="backInd"><i class="fas fa-undo"></i> Voltar</h2>
+      </a>
+    </section>
 
-  <section class="brasil" id="pageBrasil">
-    <h1>Brasil</h1>
-    <h1>Indicadores</h1>
-    <select id="indicatorsBR">
-      <option>Selecione...</option>
-    </select>
-    <button id="btnBR">Gerar gráfico</button>
-    <p id="chartBR"></p>
-    <a href="#pageInicial">
-      <p id="backBR">Voltar</p>
-    </a>
-  </section>
+    <section class="brasil" id="pageBrasil">
+      <h3>Selecione o indicador que deseja analisar</h3>
+      <select id="indicatorsBR"></select>
+      <button id="btnBR"><i class="fas fa-chart-bar"></i> Gerar gráfico</button>
+      <p class="chartBrasil" id="chartBR"></p>
+      <h3>*Alguns indicadores não possuem dados para análise.</h3>
+      <a href="#pageInicial">
+        <p id="backBR"> <i class="fas fa-undo"></i> Voltar</p>
+      </a>
+    </section>
 
-  <section class="peru" id="pagePeru">
-    <h1>Peru</h1>
-    <h1>Indicadores</h1>
-    <select id="indicatorsPER">
-      <option>Selecione...</option>
-    </select>
-    <button id="btnPER">Gerar gráfico</button>
-    <p id="chartPER"></p>
-    <a href="#pageInicial">
-      <p id="backPER">Voltar</p>
-    </a>
-  </section>
+    <section class="peru" id="pagePeru">
+      <h3>Selecione o indicador que deseja analisar</h3>
+      <select id="indicatorsPER"></select>
+      <button id="btnPER"><i class="fas fa-chart-bar"></i> Gerar gráfico</button>
+      <p class="chartPeru" id="chartPER"></p>
+      <h3>*Alguns indicadores não possuem dados para análise.</h3>
+      <a href="#pageInicial">
+        <p id="backPER"> <i class="fas fa-undo"></i> Voltar</p>
+      </a>
+    </section>
 
-  <section class="chile" id="pageChile">
-    <h1>Chile</h1>
-    <h1>Indicadores</h1>
-    <select id="indicatorsCHL">
-      <option>Selecione...</option>
-    </select>
-    <button id="btnCHL">Gerar gráfico</button>
-    <p id="chartCHL"></p>
-    <a href="#pageInicial">
-      <p id="backCHL">Voltar</p>
-    </a>
-  </section>
-
+    <section class="chile" id="pageChile">
+      <h3>Selecione o indicador que deseja analisar</h3>
+      <select id="indicatorsCHL"></select>
+      <button id="btnCHL"><i class="fas fa-chart-bar"></i> Gerar gráfico</button>
+      <p class="chartChile" id="chartCHL"></p>
+      <h3>*Alguns indicadores não possuem dados para análise.</h3>
+      <a href="#pageInicial">
+        <p id="backCHL"> <i class="fas fa-undo"></i> Voltar</p>
+      </a>
+    </section>
+  </main>
   <script src="src/main.js"></script>
   <script src="src/data/worldbank/worldbank.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
